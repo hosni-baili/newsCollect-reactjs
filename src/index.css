@@ -1,13 +1,282 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Quicksand";
+  color: #333;
+}
+.navbar {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  max-width: 73%;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  color: #f1356d;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #f1356d;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+
+html,
+body {
+  margin: 0;
 }
+
+#App {
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+#page-wrap {
+  text-align: center;
+  overflow: auto;
+  position: relative;
+  float: left;
+  width: calc(100% - 260px);
+}
+
+.bm-item {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #d1d1d1;
+  transition: color 0.2s;
+}
+
+.bm-item:hover {
+  color: white;
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+.bm-burger-bars {
+  background: #373a47;
+}
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+.bm-cross {
+  background: #bdc3c7;
+}
+
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+.avatar-image {
+  width: 40px;
+}
+
+.NewsItem {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+  border: 1px solid var(--silver);
+  display: flex;
+}
+.NewsItem:hover {
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+.NewsItem h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 8px;
+}
+
+.itemNews {
+  margin-left: 26%;
+  margin-right: 16%;
+  margin-bottom: 2%;
+}
+
+.itemNews:hover {
+  box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.1);
+}
+
+.actionButtons{
+  align-items: center;
+}
+
+.pubDate{
+  margin-right: 36%;
+  margin-left: 3%;
+}
+
+.SourceType {
+  color: #0f0e0e;
+  width: auto;
+  font-family: 'revert';
+  display: flow-root;
+}
+
+.SourceName {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  box-shadow: 0px 0px 0px 5px rgba(0,0,0,0.1);
+}
+
+.lastBuildDate{
+  display: flow-root;
+  margin-bottom: 3%;
+}
+
+.loadingNews{
+  margin-top: 10%;
+  color: #1913d8;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: xx-large;
+}
+
+.sourcesbutton{
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+
+.right-sidebar {
+  position: absolute;
+  top: 13%;
+  bottom: 0;
+  right: 0;
+  width: 250px;
+  display: block;
+  z-index: 1;
+  color: #fff;
+  font-weight: 200;
+  background-size: cover;
+  background-position: center center;
+  background-color: rgb(195, 237, 239);
+}
+
+.right-sidebar h2 {
+  margin: 20px;
+  text-align: center;
+    color: royalblue;
+    text-decoration:underline;
+    font-size:xx-large;
+
+}
+
+.right-sidebar .nav{
+  margin-left: 30px;
+}
+
+.right-sidebar .nav a{
+  display: inline-block;
+  text-decoration: none;
+  display: block;
+  margin: 10px;
+  font-style: oblique;
+  font-size: x-large;
+}
+
+.right-sidebar .nav a:hover{
+  background-color: #b8b7ad;
+}
+
+.icons-list .card{
+  max-width: 90%;
+  margin-inline-start: 5%;
+}
+
+.all-icons [class*="pe-"] {
+  font-size: 40px;
+}
+.all-icons input {
+  border: 0;
+}
+.all-icons .font-icon-detail {
+  text-align: center;
+  padding: 45px 0px 30px;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  margin: 15px 0;
+}
+.all-icons .font-icon-detail input {
+  margin: 25px auto 0;
+  width: 100%;
+  text-align: center;
+  display: block;
+  color: #aaa;
+  font-size: 13px;
+}
+.font-icon-list{
+  display: inline-block;
+  width: 192px;
+  display: inline-block;
+  margin-left: 120px;
+}
+
+.row{
+  margin-top: 30px;
+}
+
+.card-header{
+  margin-top: 30px;
+}
+
+.one-news-details{
+  display: flex;
+    position: fixed;
+    left: 5%;
+    top: 15%;
+    right: 20%;
+}
+
+.one-news-details .header-row{
+  position: relative;
+  bottom: 8px;
+}
+
+.one-news-details .row-body{
+  position: relative;
+  top: 30px;
+}
+
+.one-news-details .row-body .one-news-description p{
+  position: relative;
+  top: 41px;
+  left: 25%;
+  width: 44%;
+}
+
