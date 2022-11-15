@@ -120,6 +120,38 @@
         "sourceIcon":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9m128yi7TS83F0lXB5DzaHj1_Ufad_67WDZ4gMleFcwO5EUVAtZSu&usqp=CAU"
     },
     {
+        "sourceName":"france24",
+        "sourceType":"tv",
+        "sourceLink":"https://www.france24.com/fr/%C3%A9co-tech/rss",
+        "sourceLanguage":"français",
+        "newsCategory":"Economie",
+        "sourceIcon":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9m128yi7TS83F0lXB5DzaHj1_Ufad_67WDZ4gMleFcwO5EUVAtZSu&usqp=CAU"
+    },
+    {
+        "sourceName":"france24",
+        "sourceType":"tv",
+        "sourceLink":"https://www.france24.com/fr/sports/rss",
+        "sourceLanguage":"français",
+        "newsCategory":"Sport",
+        "sourceIcon":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9m128yi7TS83F0lXB5DzaHj1_Ufad_67WDZ4gMleFcwO5EUVAtZSu&usqp=CAU"
+    },
+    {
+        "sourceName":"france24",
+        "sourceType":"tv",
+        "sourceLink":"https://www.france24.com/fr/culture/rss",
+        "sourceLanguage":"français",
+        "newsCategory":"Culture",
+        "sourceIcon":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9m128yi7TS83F0lXB5DzaHj1_Ufad_67WDZ4gMleFcwO5EUVAtZSu&usqp=CAU"
+    },
+    {
+        "sourceName":"france24",
+        "sourceType":"tv",
+        "sourceLink":"https://www.france24.com/fr/plan%C3%A8te/rss",
+        "sourceLanguage":"français",
+        "newsCategory":"Divers",
+        "sourceIcon":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9m128yi7TS83F0lXB5DzaHj1_Ufad_67WDZ4gMleFcwO5EUVAtZSu&usqp=CAU"
+    },
+    {
         "sourceName":"aljazeera",
         "sourceType":"tv",
         "sourceLink":"https://www.aljazeera.com/xml/rss/all.xml",
