@@ -15,60 +15,46 @@ const RightSidebar = () => {
             <li><Link to="/category/sport">Sport</Link></li> */}
             <Nav>
                 <NavLink
-                    to="category/politique"
+                    to="category" state={{ cat: "politique" }}
                   >
                     Politique
                   </NavLink>
                   <NavLink
-                    to="category/sport"
+                    to="category" state={{ cat: "sport" }}
                   >
                     Sport
                   </NavLink>
                   <NavLink
-                    to="category/economie"
+                    to="category" state={{ cat: "economie" }}
                   >
                     Economie
                   </NavLink>
                   <NavLink
-                    to="category/culture"
+                    to="category" state={{ cat: "culture" }}
 
                   >
                     Culture
                   </NavLink>
                   <NavLink
-                    to="category/hitech et sciences"
+                    to="category" state={{ cat: "hitech et sciences" }} 
                   >
                     Hi-Tech & Sciences
                   </NavLink>
                   <NavLink
-                    to="category/tunisie"
+                    to="category" state={{ cat: "tunisie" }}
                   >
                     Tunisie
                   </NavLink>
                   <NavLink
-                  to="category/internationale"
+                  to="category" state={{ cat: "internationale" }}
                   >
                     Internationale
                   </NavLink>
                   <NavLink
-                    to="category/divers"
-
+                    to="category" state={{ cat: "divers" }}
                   >
                     Divers
                   </NavLink>
-              {/* <Link to="/category/politique"><FontAwesomeIcon icon={faHome} className="mr-2" />Politique</Link>
-                  <Nav.Item className="inactive">
-                  <Nav.Link href="/">
-                    <FontAwesomeIcon icon={faHome} className="mr-2" />
-                    Politique
-                  </Nav.Link>
-                </Nav.Item>
-                <Nav.Item className="active">
-                  <Nav.Link href="/">
-                    <FontAwesomeIcon icon={faHome} className="mr-2" />
-                    Sport
-                  </Nav.Link>
-                </Nav.Item> */}
             </Nav>
 
         </div>

@@ -47,7 +47,7 @@ const IconsSources = (props) => {
                   {sources && sources.map((it)=><Col className="font-icon-list" lg="2" md="3" sm="4" xs="6" key={it.sourceLink}>
                   <Link to={`/newslist/`+it.sourceName+`/`+it.newsCategory}>
                     <div className="font-icon-detail" style={{ 
-                            backgroundImage: `url(${it.sourceLink})`,backgroundRepeat:"no-repeat",backgroundSize:"contain"  
+                            backgroundImage: `url(${it.sourceIcon})`,backgroundRepeat:"no-repeat",backgroundSize:"contain"  
                             }}>
                       {/* <p>nc-air-baloon</p> */}
                     </div>
