@@ -16,6 +16,10 @@ export default props => {
       <Link className="menu-item" to="/allSources">
         List of Sources
       </Link>
+
+      <Link className="menu-item" to="/responsive">
+        responsive
+      </Link>
     </Menu>
   );
 };

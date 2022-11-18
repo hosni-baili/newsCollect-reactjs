@@ -3,16 +3,14 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
     return (  
         <nav className="navbar">
-            <h1>News Collect</h1>
-            <div className="search">
-                
-            </div>
+            <div className="col-md-3"><h1>News Collect</h1></div>
             <div className="links">
-                <Link to="/">home</Link>
-                <Link to="/allWebSources">Web Sources</Link>
-                <Link to="/allRadioSources">Radio Sources</Link>
-                <Link to="/allTvSources">TV Sources</Link>
-                <Link to="/signup">register</Link>
+                <div className="col-md-3"><Link to="/">home</Link></div>
+                
+                <div className="col-md-3"><Link to="/allWebSources">Web Sources</Link></div>
+                <div className="col-md-3"><Link to="/allRadioSources">Radio Sources</Link></div>
+                <div className="col-md-3"><Link to="/allTvSources">TV Sources</Link></div>
+                <div className="col-md-3"><Link to="/signup">register</Link></div>
             </div>
         </nav>
     );
