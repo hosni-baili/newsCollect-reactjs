@@ -17,8 +17,12 @@
 .navbar h1 {
   color: #f1356d;
 }
+
+.navbar {
+  display: inline-flex;
+  padding-left: 25%;}
 .navbar .links {
-  margin-left: auto;
+  display: inline-flex;
 }
 .navbar a {
   margin-left: 16px;
@@ -175,11 +179,7 @@ body {
 
 .right-sidebar {
   position: absolute;
-  top: 13%;
-  bottom: 0;
   right: 0;
-  width: 250px;
-  display: block;
   z-index: 1;
   color: #fff;
   font-weight: 200;
@@ -245,11 +245,9 @@ color: brown;
   font-size: 13px;
 }
 .font-icon-list{
-  display: inline-block;
   width: 192px;
   display: inline-block;
-  margin-left: 120px;
-  margin-bottom: 5%;
+  padding: 3%;
 }
 
 .row{

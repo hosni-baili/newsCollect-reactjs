@@ -11,6 +11,7 @@ import NewsList from './components/NewsList'
 import AllWebSources from './components/AllWebSources'
 import AllRadioSources from './components/AllRadioSources'
 import AllTvSources from './components/AllTvSources'
+import ResponseTest from './test/response'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Sidebar />
         <div id="page-wrap">
           <Routes>
+          <Route path='/responsive' element={<ResponseTest />}></Route>
             <Route path='/' element={<Home />}></Route>
             <Route path='/addSource' element={<AddSource />}></Route>
             <Route path='/allSources' element={<AllSources />}></Route>

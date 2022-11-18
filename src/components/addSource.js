@@ -12,7 +12,7 @@ const AddSource = () => {
     const [sourceIcon,setIcon]=useState('');
     const [isPending,setIsPending]=useState(false);
     const [isError, setIsError] = useState(false);
-    const [source]=useState(null)
+    const [submitted, setSubmitted]=useState(false)
     const navigate=useNavigate();
       
     
@@ -39,10 +39,31 @@ const AddSource = () => {
     const handleSubmit=(e)=>{
         e.preventDefault();
         addSources()
+        setSubmitted(true);
+    }
+
+    const newTutorial=()=>{
+        setName('')
+        setType('tv')
+        setLink('')
+        setLanguage('')
+        setCategory('politique')
+        setIcon('')
+
+        setSubmitted(false);
     }
 
     return ( 
-        <div className="addSource">
+    <div className="form-add">
+                {submitted ? (
+          <div>
+            <h4>Your source was added successfully!</h4>
+            <button className="btn btn-success" onClick={newTutorial}>
+              Add New Source
+            </button>
+          </div>
+        ) : (
+      <div className="addSource">
             <h2>Add new source</h2>
             <form onSubmit={handleSubmit}>
                 <label>Source Name</label>
@@ -96,6 +117,9 @@ const AddSource = () => {
                 {isPending && <button disabled>Adding Source...</button>}
             </form>
         </div>
+        )}
+        </div>
+  
      );
 }
  
